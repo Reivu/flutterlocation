@@ -345,7 +345,9 @@ public class FlutterLocation
             result.success(1);
             return;
         }
-        ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+        ActivityCompat.requestPermissions(activity, new String[]{
+                        Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION
+                },
                 REQUEST_PERMISSIONS_REQUEST_CODE);
     }
 
